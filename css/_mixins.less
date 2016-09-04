@@ -1,0 +1,48 @@
+@d: .4s;
+
+@blue1: #3f50b0;
+@blue2: #9fa8da;
+
+@red1: #ff4081;
+@red2: #ff80ab;
+
+@text1: #424242;
+@text2: #b0b0b0;
+
+@grey1: #dbdbdb;
+@grey2: #fafafa;
+
+@img: "../images";
+
+.clearfix {
+    zoom: 1;
+    &:before {
+        content: '';
+        display: block;
+    }
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+.vcenter-parent {
+    &:before {
+        content: '';
+        display: inline-block;
+        width: 1px;
+        height: 100%;
+        vertical-align: middle;
+    }
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.inner {
+    padding-left: 15%;
+    padding-right: 15%;
+}
