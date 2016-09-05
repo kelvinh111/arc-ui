@@ -46,7 +46,9 @@ gulp.task('browser-sync', function() {
         ws: true,
         // port: 5000
     });
+    browserSync.watch(__dirname + "/*.html").on("change", browserSync.reload);
 });
+
 
 gulp.task('build-css', function() {
     return gulp.src([cssSrc + cssSrcFile])

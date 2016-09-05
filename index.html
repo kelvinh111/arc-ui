@@ -142,7 +142,32 @@
 <div id="accordion" class="section">
     <h2 class="section-title"><span>Accordion</span></h2>
     <div class="content">
-
+        <div class="arc-accordion">
+            <div class="arc-accordion-bar arc-accordion-title"><span>Sport</span></div>
+            <div class="arc-accordion-bar arc-accordion-close"></div>
+            <ul>
+                <li>
+                <span>Sport</span>
+                <ul>
+                    <li><a href="#accordion">Football</a></li>
+                    <li><a href="#accordion">Basketball</a></li>
+                    <li><a href="#accordion">Baseball</a></li>
+                    <li><a href="#accordion">Running</a></li>
+                </ul>
+                </li>
+                <li>
+                <span>Music</span>
+                <ul>
+                    <li><a href="#accordion">Pop</a></li>
+                    <li><a href="#accordion">Rock</a></li>
+                    <li><a href="#accordion">Classical</a></li>
+                </ul>
+                </li>
+                <li><span>Health</span></li>
+                <li><span>Beauty</span></li>
+                <li><span>Books</span></li>
+            </ul>
+        </div>
     </div>
 </div>
 
@@ -150,7 +175,16 @@
 <div id="modal" class="section">
     <h2 class="section-title"><span>Modal</span></h2>
     <div class="content">
-
+        <a class="btn" id="trigger-modal">Open Modal</a>
+        <div id="popup">
+            <div id="popup-wrapper">
+                <h2 class='sub-title'>Are you sure to do that?</h2>
+                <div class="btn-small-group">
+                    <a class="btn-small yes">Yes</a>
+                    <a class="btn-small no">No</a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -158,6 +192,16 @@
 <div id="tabs" class="section">
     <h2 class="section-title"><span>Tabs</span></h2>
     <div class="content">
+        <svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs>
+                <path fill="#FFFFFF" stroke="#000000" id="round"
+                stroke-miterlimit="10" d="M215,120c0,52.5-42.5,95-95,95s-95-42.5-95-95s42.5-95,95-95 S215,67.5,215,120z"/>
+            </defs>
+
+             <text>
+                <textPath xlink:href="#round">TAB 1</textPath>
+            </text>
+        </svg>
 
     </div>
 </div>
@@ -174,6 +218,7 @@
 <button id="toggle">Ref</button>
 <div id="ref"></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.15.0/lodash.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="js/app.js"></script>
 </body>
