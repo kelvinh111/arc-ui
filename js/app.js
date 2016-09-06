@@ -3,6 +3,9 @@
 (function ($) {
     $(function () {
 
+        var $doc = $(document);
+        var $body = $("body");
+
         $("#toggle").on("click", function (e) {
             $(this).toggleClass("active");
             $("#ref").toggleClass("active");
@@ -10,6 +13,11 @@
 
         $("#nav-toggle").on("click", function (e) {
             $(this).parent("nav").toggleClass("active");
+            if ($(this).parent("nav").hasClass("active")) {
+                $body.addClass("lock");
+            } else {
+                $body.removeClass("lock");
+            }
         });
 
         var current = "";
@@ -19,14 +27,13 @@
             $(".section").each(function (i, v) {
                 var $v = $(v);
                 var id = $v.attr("id");
-                var h = $v.outerHeight();
                 var top = $v.position().top;
-                var bottom = top + h;
+                // var h = $v.outerHeight();
+                // var bottom = top + h;
 
                 sections[id] = {
-                    h: h,
-                    top: top,
-                    bottom: bottom
+                    // h: h,
+                    top: top
                 };
 
                 switch (id) {
@@ -58,9 +65,9 @@
         initSections();
 
         function onScroll() {
-            var st = $(document).scrollTop();
+            var st = $doc.scrollTop();
             _.each(sections, function (n, k) {
-                if (st >= n.top && st < n.bottom && current !== k) {
+                if (st >= n.top - 120 && current !== k) {
                     if (_.has(sections, current) && typeof sections[current].leave !== "undefined") sections[current].leave();
                     if (typeof sections[k].enter !== "undefined") sections[k].enter();
 
@@ -69,7 +76,7 @@
             });
         }
 
-        $(document).on("scroll", onScroll);
+        $doc.on("scroll", onScroll);
 
         $(".arc-accordion li").each(function (i, v) {
             var $li = $(v);
@@ -117,16 +124,23 @@
 
         $("#trigger-modal").on("click", function (e) {
             $popup.animation.play();
-            $("body").css({
-                overflow: "hidden"
-            });
+            $body.addClass("lock");
         });
 
         $popup.find("a.btn-small").on("click", function () {
             $popup.animation.reverse();
-            $("body").css({
-                overflow: "auto"
-            });
+            $body.removeClass("lock");
+        });
+
+        $("#tabs svg text").on("click", function (e) {
+            var $this = $(this);
+            $this.parent("g").addClass("active").siblings().removeClass("active");
+            var target = $this.attr("data-target");
+            $("#" + target).addClass("active").siblings().removeClass("active");
+        });
+
+        var mySwiper = new Swiper(".swiper-container", {
+            pagination: ".swiper-pagination"
         });
     });
 })(jQuery);;

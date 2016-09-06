@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=240; user-scalable=1;">
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
 <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
@@ -192,15 +193,99 @@
 <div id="tabs" class="section">
     <h2 class="section-title"><span>Tabs</span></h2>
     <div class="content">
-        <svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <defs>
-                <path fill="#FFFFFF" stroke="#000000" id="round"
-                stroke-miterlimit="10" d="M215,120c0,52.5-42.5,95-95,95s-95-42.5-95-95s42.5-95,95-95 S215,67.5,215,120z"/>
-            </defs>
 
-             <text>
-                <textPath xlink:href="#round">TAB 1</textPath>
-            </text>
+        <div id="tabs-content">
+            <div id="tab1" class="active">
+                This is Tab 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus luctus nulla non ipsum sodales pharetra. Aliquam imperdiet vitae odio sed porta. Suspendisse malesuada enim vel enim varius hendrerit. 
+            </div>
+            <div id="tab2">
+                This is Tab 2.
+                This is Tab 2 
+                This is Tab 2 
+            </div>
+            <div id="tab3">
+                This is Tab 3.
+                This is Tab 3 
+                This is Tab 3 
+            </div>
+            <div id="tab4">
+                This is Tab 4.
+                This is Tab 4 
+                This is Tab 4 
+            </div>
+            <div id="tab5">
+                This is Tab 5.
+                This is Tab 5 
+                This is Tab 5 
+            </div>
+        </div>
+
+        <svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g class="active">
+                <defs id="def1">
+                <path fill="#FFFFFF" stroke="#000000" id="round1"
+                stroke-miterlimit="10" d="M215,120c0,52.5-42.5,95-95,95s-95-42.5-95-95s42.5-95,95-95 S215,67.5,215,120z"/>
+                </defs>
+                <path class="line" fill="none" stroke="#ff4081" stroke-width="2.5" stroke-miterlimit="10" 
+                d="M158.4,7.9c-11.9-4-24.7-6.1-37.9-6.1 s-26,2.2-37.9,6.1"/>
+                 <text data-target="tab1" text-anchor="middle">
+                    <textPath xlink:href="#round1" startOffset="50%">TAB 1</textPath>
+                </text>
+            </g>
+
+
+            <g>
+                <defs>
+                <path fill="#FFFFFF" stroke="#000000" id="round2"
+                stroke-miterlimit="10" d="M215,120c0,52.5-42.5,95-95,95s-95-42.5-95-95s42.5-95,95-95 S215,67.5,215,120z"/>
+                </defs>
+                <path class="line" fill="none" stroke="#ff4081" stroke-width="2.5" stroke-miterlimit="10" 
+                d="M239.3,121.8c0.1-12.6-1.8-25.4-5.9-38 s-10.1-24.1-17.6-34.2"/>
+                 <text data-target="tab2" text-anchor="middle">
+                    <textPath xlink:href="#round2" startOffset="50%">TAB 2</textPath>
+                </text>
+            </g>
+
+
+            <g>
+                <defs>
+                <path fill="#FFFFFF" stroke="#000000" id="round3"
+                stroke-miterlimit="10" d="M215,120c0,52.5-42.5,95-95,95s-95-42.5-95-95s42.5-95,95-95 S215,67.5,215,120z"/>
+                </defs>
+                <path class="line" fill="none" stroke="#ff4081" stroke-width="2.5" stroke-miterlimit="10" 
+                d="M156,233.9c12-3.8,23.6-9.6,34.3-17.3 s19.8-17,27.1-27.3"/>
+                 <text data-target="tab3" text-anchor="middle">
+                    <textPath xlink:href="#round3" startOffset="50%">TAB 3</textPath>
+                </text>
+            </g>
+
+
+            <g>
+                <defs>
+                <path fill="#FFFFFF" stroke="#000000" id="round4"
+                stroke-miterlimit="10" d="M215,120c0,52.5-42.5,95-95,95s-95-42.5-95-95s42.5-95,95-95 S215,67.5,215,120z"/>
+                </defs>
+                <path class="line" fill="none" stroke="#ff4081" stroke-width="2.5" stroke-miterlimit="10" 
+                d="M23.6,189.3c7.3,10.2,16.4,19.5,27.1,27.3 S73,230.1,85,233.9"/>
+                 <text data-target="tab4" text-anchor="middle">
+                    <textPath xlink:href="#round4" startOffset="50%">TAB 4</textPath>
+                </text>
+            </g>
+
+
+            <g>
+                <defs>
+                <path fill="#FFFFFF" stroke="#000000" id="round5"
+                stroke-miterlimit="10" d="M215,120c0,52.5-42.5,95-95,95s-95-42.5-95-95s42.5-95,95-95 S215,67.5,215,120z"/>
+                </defs>
+                <path class="line" fill="none" stroke="#ff4081" stroke-width="2.5" stroke-miterlimit="10" 
+                d="M25.1,49.6C17.6,59.7,11.7,71.2,7.6,83.8 s-6,25.4-5.9,38"/>
+                 <text data-target="tab5" text-anchor="middle">
+                    <textPath xlink:href="#round5" startOffset="50%">TAB 5</textPath>
+                </text>
+            </g>
+
+
         </svg>
 
     </div>
@@ -210,14 +295,35 @@
 <div id="slideshow" class="section">
     <h2 class="section-title"><span>Slideshow</span></h2>
     <div class="content">
-
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <h2 class="sub-title">Slide 1</h2>
+                </div>
+                <div class="swiper-slide">
+                    <h2 class="sub-title">Slide 2</h2>
+                </div>
+                <div class="swiper-slide">
+                    <h2 class="sub-title">Slide 3</h2>
+                </div>
+                <div class="swiper-slide">
+                    <h2 class="sub-title">Slide 4</h2>
+                </div>
+                <div class="swiper-slide">
+                    <h2 class="sub-title">Slide 5</h2>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
     </div>
 </div>
 
 
 <button id="toggle">Ref</button>
 <div id="ref"></div>
+<div id="shadow"></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.15.0/lodash.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="js/app.js"></script>
