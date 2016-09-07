@@ -1,24 +1,22 @@
+/*
+ * Spaghetti code now
+ * have to refactor
+ */
 (function($) {
     $(function() {
 
         var $doc = $(document);
         var $body = $("body");
 
+
+        // debug
         $("#toggle").on("click", function(e) {
             $(this).toggleClass("active");
             $("#ref").toggleClass("active");
         });
 
-        $("#nav-toggle").on("click", function(e) {
-            $(this).parent("nav").toggleClass("active");
-            if ($(this).parent("nav").hasClass("active")) {
-                $body.addClass("lock");
-            } else {
-                $body.removeClass("lock");
-            }
-        });
 
-
+        // all sections
         var current = "";
         var sections = {};
 
@@ -27,13 +25,9 @@
                 var $v = $(v);
                 var id = $v.attr("id");
                 var top = $v.position().top;
-                // var h = $v.outerHeight();
-                // var bottom = top + h;
 
                 sections[id] = {
-                    // h: h,
                     top: top,
-                    // bottom: bottom,
                 }
 
                 switch (id) {
@@ -62,8 +56,6 @@
             });
         }
 
-        initSections();
-
         function onScroll() {
             var st = $doc.scrollTop();
             _.each(sections, function(n,k) {
@@ -79,7 +71,20 @@
         }
 
         $doc.on("scroll", onScroll);
+        initSections();
 
+
+        // navigation
+        $("#nav-toggle").on("click", function(e) {
+            $(this).parent("nav").toggleClass("active");
+            if ($(this).parent("nav").hasClass("active")) {
+                $body.addClass("lock");
+            } else {
+                $body.removeClass("lock");
+            }
+        });
+
+        // accordion
         $(".arc-accordion li").each(function(i,v) {
             var $li = $(v);
             $li.on("click", function(e) {
@@ -117,6 +122,8 @@
             $(".arc-accordion li.active").trigger("click");
         });
 
+
+        // modal
         var $popup = $("#popup");
         var popupShow = false;
         var tl = new TimelineLite({paused:true});
@@ -136,7 +143,7 @@
         })
 
 
-
+        // tabs
         $("#tabs svg text").on("click", function(e) {
             var $this = $(this);
             $this.parent("g").addClass("active").siblings().removeClass("active");
@@ -146,6 +153,7 @@
         });
 
 
+        // slideshow
         var mySwiper = new Swiper(".swiper-container", {
             pagination: ".swiper-pagination"
         });

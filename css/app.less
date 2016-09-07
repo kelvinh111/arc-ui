@@ -49,7 +49,7 @@ body {
     font-size: 16px;
     font-weight: bold;
     color: white;
-    display: none;
+    // display: none;
     &.active {
         background: @red1;
     }
@@ -59,12 +59,12 @@ body {
     width: 100%;
     height: 13000px;
     position: absolute;
-    top: -991px;
+    top: -721px;
     left: 0;
     right: 0;
     z-index: 999;
     pointer-events: none;
-    background: url('@{img}/design-01.png') no-repeat center top;
+    background: url('@{img}/design-02.png') no-repeat center top;
     background-size: contain;
     opacity: 0.5;
     display: none;
@@ -95,6 +95,24 @@ body {
     }
 }
 
+#bottom {
+    background: @blue1;
+    height: 240px;
+    color: white;
+    padding: 65px;
+    a {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        background: url("@{img}/github.svg") no-repeat center center;
+        text-indent: -9999px;
+        margin-bottom: 25px;
+    }
+    h2 {
+        padding: 0;
+    }
+}
+
 .section {
     padding: 60px 0 60px;
     margin-bottom: 1px;
@@ -119,7 +137,7 @@ h1.big-title {
     font-size: 30px;
     font-weight: bold;
     line-height: 36px;
-    color: @text1;
+    color: inherit;
     text-transform: uppercase;
     padding-bottom: 20px;
 }
@@ -127,7 +145,7 @@ h2.sub-title {
     font-size: 24px;
     font-weight: bold;
     line-height: 28px;
-    color: @text1;
+    color: inherit;
     text-transform: uppercase;
     padding-bottom: 20px;
 }
@@ -135,7 +153,7 @@ h3.item-title {
     font-size: 15px;
     font-weight: bold;
     line-height: 17.5px;
-    color: @text1;
+    color: inherit;
     text-transform: uppercase;
     letter-spacing: 1px;
     padding-bottom: 10px;
