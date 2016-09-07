@@ -6,4 +6,4 @@ Tested and able to work under [Web Browser for Android Wear](https://play.google
 
 ### Links
 * [Live demo](https://kelvinh111.github.io/arc-ui) - If Desktop, please use Chrome with Developer Tools and Device Toolbar enabled.
-* [Design Mockup](https://kelvinh111.github.io/arc-ui/assets/arcui-big.png)
+* [Design Mockup](https://kelvinh111.github.io/arc-ui/images/arcui-big.png)
