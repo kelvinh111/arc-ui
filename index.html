@@ -1,333 +1,548 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Arc UI</title>
-<meta name="viewport" content="width=240, user-scalable=1">
-<meta name="description" content="An Experimental UI Kit for SmartWatch">
-<meta name="keywords" content="SmartWatch,Android Wear,Wearable,UI">
-<meta name="author" content="kelvinh111">
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<link rel="icon" href="favicon.ico" type="image/x-icon">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
-<link rel="stylesheet" href="css/app.min.css">
+    <meta charset="utf-8">
+    <title>Arc UI</title>
+    <meta content="width=240, user-scalable=1" name="viewport">
+    <meta content="An Experimental UI Kit for SmartWatch" name="description">
+    <meta content="SmartWatch,Android Wear,Wearable,UI" name="keywords">
+    <meta content="kelvinh111" name="author">
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="favicon.ico" rel="icon" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css" rel="stylesheet">
+    <link href="css/app.min.css" rel="stylesheet">
 </head>
+
 <body>
-
-
-<div id="top">
-    <h1>Arc UI</h1>
-    <img src="images/top.svg" alt="">
-</div>
-
-
-<div id="colors" class="section">
-    <h2 class="section-title"><span>Colors</span></h2>
-    <div class="content">
-        <div id="color-indigo" class="color">
-            <p>Primary<br />Indigo<br />#3f50b0</p>
-        </div>
-        <div id="color-indigo-light" class="color">
-            <p>#9fa8da</p>
-        </div>
-        <div id="color-pink" class="color">
-            <p>Secondary<br />Pink<br />#ff4081</p>
-        </div>
-        <div id="color-pink-light" class="color">
-            <p>#ff80ab</p>
-        </div>
-        <div id="color-text1" class="color">
-            <p>Primary Text<br />Grey<br />#424242</p>
-        </div>
-        <div id="color-grey1" class="color">
-            <p>#dbdbdb</p>
-        </div>
-        <div id="color-text2" class="color">
-            <p>Secondary Text<br />Grey<br />#b0b0b0</p>
-        </div>
-        <div id="color-grey2" class="color">
-            <p>#fafafa</p>
-        </div>
+    <div id="top">
+        <h1>
+            Arc UI
+        </h1>
+        <img alt="" src="images/top.svg">
+        </img>
     </div>
-</div>
-
-
-<div id="typography" class="section">
-    <h2 class="section-title"><span>Typography</span></h2>
-    <div class="content">
-        <h1 class="big-title">Big title</h1>
-        <h2 class="sub-title">Sub title</h2>
-        <h3 class="item-title">Item title</h3>
-        <p class="paragraph">
-        <span>This is a paragraph</span>
-        <br />
-        <em>Strong text</em>
-        <br />
-        <a href="#typography">And a link</a>
-        <br />
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus luctus nulla non ipsum sodales pharetra. Aliquam imperdiet vitae odio sed porta. Suspendisse malesuada enim vel enim varius hendrerit. </p>
-    </div>
-</div>
-
-
-<div id="buttons" class="section">
-    <h2 class="section-title"><span>Buttons</span></h2>
-    <div class="content">
-        <a class="btn" href="#buttons">Button</a>
-        <a class="btn red" href="#buttons">Button</a>
-        <div class="btn-small-group">
-            <a class="btn-small search" href="#buttons">Search</a>
-            <a class="btn-small star red" href="#buttons">Star</a>
-            <a class="btn-small heart" disabled>Heart</a>
-        </div>
-    </div>
-</div>
-
-
-<div id="form" class="section">
-    <h2 class="section-title"><span>Form</span></h2>
-    <div class="content">
-        <form>
-            <input type="text" placeholder="Username">
-            <input type="password" placeholder="password">
-            <fieldset>
-                <label for="checkbox">
-                    <input type="checkbox" id="checkbox" value="yeah">
-                    <span>Checkbox</span>
-                </label>
-                <label for="radio">
-                    <input type="radio" id="radio" value="yeah">
-                    <span>Radio</span>
-                </label>
-            </fieldset>
-            <input type="button" value="Submit" class="red">
-        </form>
-    </div>
-</div>
-
-
-<div id="image" class="section">
-    <h2 class="section-title"><span>Image</span></h2>
-    <div class="content">
-        <div class="image">
-            <div class="image-wrapper">
-                <img src="images/img.jpg" alt="">
+    <div class="section" id="colors">
+        <h2 class="section-title">
+            <span>
+                Colors
+            </span>
+        </h2>
+        <div class="content">
+            <div class="color" id="color-indigo">
+                <p>
+                    Primary
+                    <br/>
+                    Indigo
+                    <br/>
+                    #3f50b0
+                </p>
             </div>
-        </div>
-        <div class="image">
-            <div class="image-wrapper">
-                <img src="images/img.jpg" alt="Image title">
-                <div class="image-title">Image Title</div>
+            <div class="color" id="color-indigo-light">
+                <p>
+                    #9fa8da
+                </p>
+            </div>
+            <div class="color" id="color-pink">
+                <p>
+                    Secondary
+                    <br/>
+                    Pink
+                    <br/>
+                    #ff4081
+                </p>
+            </div>
+            <div class="color" id="color-pink-light">
+                <p>
+                    #ff80ab
+                </p>
+            </div>
+            <div class="color" id="color-text1">
+                <p>
+                    Primary Text
+                    <br/>
+                    Grey
+                    <br/>
+                    #424242
+                </p>
+            </div>
+            <div class="color" id="color-grey1">
+                <p>
+                    #dbdbdb
+                </p>
+            </div>
+            <div class="color" id="color-text2">
+                <p>
+                    Secondary Text
+                    <br/>
+                    Grey
+                    <br/>
+                    #b0b0b0
+                </p>
+            </div>
+            <div class="color" id="color-grey2">
+                <p>
+                    #fafafa
+                </p>
             </div>
         </div>
     </div>
-</div>
-
-
-<div id="navigation" class="section">
-    <h2 class="section-title"><span>Navigation</span></h2>
-    <div class="content">
-        <nav>
-            <div id="nav-toggle"></div>
-            <menu>
+    <div class="section" id="typography">
+        <h2 class="section-title">
+            <span>
+                Typography
+            </span>
+        </h2>
+        <div class="content">
+            <h1 class="big-title">
+                Big title
+            </h1>
+            <h2 class="sub-title">
+                Sub title
+            </h2>
+            <h3 class="item-title">
+                Item title
+            </h3>
+            <p class="paragraph">
+                <span>
+                    This is a paragraph
+                </span>
+                <br/>
+                <em>
+                    Strong text
+                </em>
+                <br/>
+                <a href="#typography">
+                    And a link
+                </a>
+                <br/>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus luctus nulla non ipsum sodales pharetra. Aliquam imperdiet vitae odio sed porta. Suspendisse malesuada enim vel enim varius hendrerit.
+            </p>
+        </div>
+    </div>
+    <div class="section" id="buttons">
+        <h2 class="section-title">
+            <span>
+                Buttons
+            </span>
+        </h2>
+        <div class="content">
+            <a class="btn" href="#buttons">
+                Button
+            </a>
+            <a class="btn red" href="#buttons">
+                Button
+            </a>
+            <div class="btn-small-group">
+                <a class="btn-small search" href="#buttons">
+                    Search
+                </a>
+                <a class="btn-small star red" href="#buttons">
+                    Star
+                </a>
+                <a class="btn-small heart" disabled="">
+                    Heart
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="form">
+        <h2 class="section-title">
+            <span>
+                Form
+            </span>
+        </h2>
+        <div class="content">
+            <form>
+                <input placeholder="Username" type="text">
+                    <input placeholder="password" type="password">
+                        <fieldset>
+                            <label for="checkbox">
+                                <input id="checkbox" type="checkbox" value="yeah">
+                                    <span>
+                                        Checkbox
+                                    </span>
+                                </input>
+                            </label>
+                            <label for="radio">
+                                <input id="radio" type="radio" value="yeah">
+                                    <span>
+                                        Radio
+                                    </span>
+                                </input>
+                            </label>
+                        </fieldset>
+                        <input class="red" type="button" value="Submit">
+                        </input>
+                    </input>
+                </input>
+            </form>
+        </div>
+    </div>
+    <div class="section" id="image">
+        <h2 class="section-title">
+            <span>
+                Image
+            </span>
+        </h2>
+        <div class="content">
+            <div class="image">
+                <div class="image-wrapper">
+                    <img alt="" src="images/img.jpg">
+                    </img>
+                </div>
+            </div>
+            <div class="image">
+                <div class="image-wrapper">
+                    <img alt="Image title" src="images/img.jpg">
+                        <div class="image-title">
+                            Image Title
+                        </div>
+                    </img>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="navigation">
+        <h2 class="section-title">
+            <span>
+                Navigation
+            </span>
+        </h2>
+        <div class="content">
+            <nav>
+                <div id="nav-toggle">
+                </div>
+                <menu>
+                    <ul>
+                        <li class="active">
+                            <a href="#navigation">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#navigation">
+                                About Me
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#navigation">
+                                Articles
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#navigation">
+                                Contact Me
+                            </a>
+                        </li>
+                    </ul>
+                </menu>
+            </nav>
+            <h2 class="sub-title">
+                Tap
+            </h2>
+        </div>
+    </div>
+    <div class="section" id="accordion">
+        <h2 class="section-title">
+            <span>
+                Accordion
+            </span>
+        </h2>
+        <div class="content">
+            <div class="arc-accordion">
+                <div class="arc-accordion-bar arc-accordion-title">
+                    <span>
+                        Sport
+                    </span>
+                </div>
+                <div class="arc-accordion-bar arc-accordion-close">
+                </div>
                 <ul>
-                    <li class="active"><a href="#navigation">Home</a></li>
-                    <li><a href="#navigation">About Me</a></li>
-                    <li><a href="#navigation">Articles</a></li>
-                    <li><a href="#navigation">Contact Me</a></li>
+                    <li>
+                        <span>
+                            Sport
+                        </span>
+                        <ul>
+                            <li>
+                                <a href="#accordion">
+                                    Football
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#accordion">
+                                    Basketball
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#accordion">
+                                    Baseball
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#accordion">
+                                    Running
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>
+                            Music
+                        </span>
+                        <ul>
+                            <li>
+                                <a href="#accordion">
+                                    Pop
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#accordion">
+                                    Rock
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#accordion">
+                                    Classical
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>
+                            Health
+                        </span>
+                        <ul>
+                            <li>
+                                <a href="#accordion">
+                                Health 1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#accordion">
+                                Health 2
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>
+                            Beauty
+                        </span>
+                        <ul>
+                            <li>
+                                <a href="#accordion">
+                                Beauty 1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#accordion">
+                                Beauty 2
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#accordion">
+                                Beauty 3
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>
+                            Books
+                        </span>
+                        <ul>
+                            <li>
+                                <a href="#accordion">
+                                Book 1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#accordion">
+                                Book 2
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
-            </menu>
-        </nav>
-        <h2 class="sub-title">Tap</h2>
-    </div>
-</div>
-
-
-<div id="accordion" class="section">
-    <h2 class="section-title"><span>Accordion</span></h2>
-    <div class="content">
-        <div class="arc-accordion">
-            <div class="arc-accordion-bar arc-accordion-title"><span>Sport</span></div>
-            <div class="arc-accordion-bar arc-accordion-close"></div>
-            <ul>
-                <li>
-                <span>Sport</span>
-                <ul>
-                    <li><a href="#accordion">Football</a></li>
-                    <li><a href="#accordion">Basketball</a></li>
-                    <li><a href="#accordion">Baseball</a></li>
-                    <li><a href="#accordion">Running</a></li>
-                </ul>
-                </li>
-                <li>
-                <span>Music</span>
-                <ul>
-                    <li><a href="#accordion">Pop</a></li>
-                    <li><a href="#accordion">Rock</a></li>
-                    <li><a href="#accordion">Classical</a></li>
-                </ul>
-                </li>
-                <li><span>Health</span></li>
-                <li><span>Beauty</span></li>
-                <li><span>Books</span></li>
-            </ul>
+            </div>
         </div>
     </div>
-</div>
-
-
-<div id="modal" class="section">
-    <h2 class="section-title"><span>Modal</span></h2>
-    <div class="content">
-        <a class="btn" id="trigger-modal">Open Modal</a>
-        <div id="popup">
-            <div id="popup-wrapper">
-                <h2 class='sub-title'>Are you sure to do that?</h2>
-                <div class="btn-small-group">
-                    <a class="btn-small yes">Yes</a>
-                    <a class="btn-small no">No</a>
+    <div class="section" id="modal">
+        <h2 class="section-title">
+            <span>
+                Modal
+            </span>
+        </h2>
+        <div class="content">
+            <a class="btn" id="trigger-modal">
+                Open Modal
+            </a>
+            <div id="popup">
+                <div id="popup-wrapper">
+                    <h2 class="sub-title">
+                        Are you sure to do that?
+                    </h2>
+                    <div class="btn-small-group">
+                        <a class="btn-small yes">
+                            Yes
+                        </a>
+                        <a class="btn-small no">
+                            No
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-
-
-<div id="tabs" class="section">
-    <h2 class="section-title"><span>Tabs</span></h2>
-    <div class="content">
-
-        <div id="tabs-content">
-            <div id="tab1" class="active">
-                This is Tab 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus luctus nulla non ipsum sodales pharetra. Aliquam imperdiet vitae odio sed porta. Suspendisse malesuada enim vel enim varius hendrerit. 
-            </div>
-            <div id="tab2">
-                This is Tab 2.
-                This is Tab 2 
-                This is Tab 2 
-            </div>
-            <div id="tab3">
-                This is Tab 3.
-                This is Tab 3 
-                This is Tab 3 
-            </div>
-            <div id="tab4">
-                This is Tab 4.
-                This is Tab 4 
-                This is Tab 4 
-            </div>
-            <div id="tab5">
-                This is Tab 5.
-                This is Tab 5 
-                This is Tab 5 
-            </div>
-        </div>
-
-        <svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <g class="active">
-                <defs id="def1">
-                <path fill="#FFFFFF" stroke="#000000" id="round1"
-                stroke-miterlimit="10" d="M215,120c0,52.5-42.5,95-95,95s-95-42.5-95-95s42.5-95,95-95 S215,67.5,215,120z"/>
-                </defs>
-                <path class="line" fill="none" stroke="#ff4081" stroke-width="2.5" stroke-miterlimit="10" 
-                d="M158.4,7.9c-11.9-4-24.7-6.1-37.9-6.1 s-26,2.2-37.9,6.1"/>
-                 <text data-target="tab1" text-anchor="middle">
-                    <textPath xlink:href="#round1" startOffset="50%">TAB 1</textPath>
-                </text>
-            </g>
-
-
-            <g>
-                <defs>
-                <path fill="#FFFFFF" stroke="#000000" id="round2"
-                stroke-miterlimit="10" d="M215,120c0,52.5-42.5,95-95,95s-95-42.5-95-95s42.5-95,95-95 S215,67.5,215,120z"/>
-                </defs>
-                <path class="line" fill="none" stroke="#ff4081" stroke-width="2.5" stroke-miterlimit="10" 
-                d="M239.3,121.8c0.1-12.6-1.8-25.4-5.9-38 s-10.1-24.1-17.6-34.2"/>
-                 <text data-target="tab2" text-anchor="middle">
-                    <textPath xlink:href="#round2" startOffset="50%">TAB 2</textPath>
-                </text>
-            </g>
-
-
-            <g>
-                <defs>
-                <path fill="#FFFFFF" stroke="#000000" id="round3"
-                stroke-miterlimit="10" d="M215,120c0,52.5-42.5,95-95,95s-95-42.5-95-95s42.5-95,95-95 S215,67.5,215,120z"/>
-                </defs>
-                <path class="line" fill="none" stroke="#ff4081" stroke-width="2.5" stroke-miterlimit="10" 
-                d="M156,233.9c12-3.8,23.6-9.6,34.3-17.3 s19.8-17,27.1-27.3"/>
-                 <text data-target="tab3" text-anchor="middle">
-                    <textPath xlink:href="#round3" startOffset="50%">TAB 3</textPath>
-                </text>
-            </g>
-
-
-            <g>
-                <defs>
-                <path fill="#FFFFFF" stroke="#000000" id="round4"
-                stroke-miterlimit="10" d="M215,120c0,52.5-42.5,95-95,95s-95-42.5-95-95s42.5-95,95-95 S215,67.5,215,120z"/>
-                </defs>
-                <path class="line" fill="none" stroke="#ff4081" stroke-width="2.5" stroke-miterlimit="10" 
-                d="M23.6,189.3c7.3,10.2,16.4,19.5,27.1,27.3 S73,230.1,85,233.9"/>
-                 <text data-target="tab4" text-anchor="middle">
-                    <textPath xlink:href="#round4" startOffset="50%">TAB 4</textPath>
-                </text>
-            </g>
-
-
-            <g>
-                <defs>
-                <path fill="#FFFFFF" stroke="#000000" id="round5"
-                stroke-miterlimit="10" d="M215,120c0,52.5-42.5,95-95,95s-95-42.5-95-95s42.5-95,95-95 S215,67.5,215,120z"/>
-                </defs>
-                <path class="line" fill="none" stroke="#ff4081" stroke-width="2.5" stroke-miterlimit="10" 
-                d="M25.1,49.6C17.6,59.7,11.7,71.2,7.6,83.8 s-6,25.4-5.9,38"/>
-                 <text data-target="tab5" text-anchor="middle">
-                    <textPath xlink:href="#round5" startOffset="50%">TAB 5</textPath>
-                </text>
-            </g>
-
-
-        </svg>
-
-    </div>
-</div>
-
-
-<div id="slideshow" class="section">
-    <h2 class="section-title"><span>Slideshow</span></h2>
-    <div class="content">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <h2 class="sub-title">Slide 1</h2>
+    <div class="section" id="tabs">
+        <h2 class="section-title">
+            <span>
+                Tabs
+            </span>
+        </h2>
+        <div class="content">
+            <div id="tabs-content">
+                <div class="active" id="tab1">
+                    This is Tab 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus luctus nulla non ipsum sodales pharetra. Aliquam imperdiet vitae odio sed porta. Suspendisse malesuada enim vel enim varius hendrerit.
                 </div>
-                <div class="swiper-slide">
-                    <h2 class="sub-title">Slide 2</h2>
+                <div id="tab2">
+                    This is Tab 2.
+                    This is Tab 2
+                    This is Tab 2
                 </div>
-                <div class="swiper-slide">
-                    <h2 class="sub-title">Slide 3</h2>
+                <div id="tab3">
+                    This is Tab 3.
+                    This is Tab 3
+                    This is Tab 3
                 </div>
-                <div class="swiper-slide">
-                    <h2 class="sub-title">Slide 4</h2>
+                <div id="tab4">
+                    This is Tab 4.
+                    This is Tab 4
+                    This is Tab 4
                 </div>
-                <div class="swiper-slide">
-                    <h2 class="sub-title">Slide 5</h2>
+                <div id="tab5">
+                    This is Tab 5.
+                    This is Tab 5
+                    This is Tab 5
                 </div>
             </div>
-            <div class="swiper-pagination"></div>
+            <svg viewbox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g class="active">
+                    <defs id="def1">
+                        <path d="M215,120c0,52.5-42.5,95-95,95s-95-42.5-95-95s42.5-95,95-95 S215,67.5,215,120z" fill="#FFFFFF" id="round1" stroke="#000000" stroke-miterlimit="10">
+                        </path>
+                    </defs>
+                    <path class="line" d="M158.4,7.9c-11.9-4-24.7-6.1-37.9-6.1 s-26,2.2-37.9,6.1" fill="none" stroke="#ff4081" stroke-miterlimit="10" stroke-width="2.5">
+                    </path>
+                    <text data-target="tab1" text-anchor="middle">
+                        <textpath startoffset="50%" xlink:href="#round1">
+                            TAB 1
+                        </textpath>
+                    </text>
+                </g>
+                <g>
+                    <defs>
+                        <path d="M215,120c0,52.5-42.5,95-95,95s-95-42.5-95-95s42.5-95,95-95 S215,67.5,215,120z" fill="#FFFFFF" id="round2" stroke="#000000" stroke-miterlimit="10">
+                        </path>
+                    </defs>
+                    <path class="line" d="M239.3,121.8c0.1-12.6-1.8-25.4-5.9-38 s-10.1-24.1-17.6-34.2" fill="none" stroke="#ff4081" stroke-miterlimit="10" stroke-width="2.5">
+                    </path>
+                    <text data-target="tab2" text-anchor="middle">
+                        <textpath startoffset="50%" xlink:href="#round2">
+                            TAB 2
+                        </textpath>
+                    </text>
+                </g>
+                <g>
+                    <defs>
+                        <path d="M215,120c0,52.5-42.5,95-95,95s-95-42.5-95-95s42.5-95,95-95 S215,67.5,215,120z" fill="#FFFFFF" id="round3" stroke="#000000" stroke-miterlimit="10">
+                        </path>
+                    </defs>
+                    <path class="line" d="M156,233.9c12-3.8,23.6-9.6,34.3-17.3 s19.8-17,27.1-27.3" fill="none" stroke="#ff4081" stroke-miterlimit="10" stroke-width="2.5">
+                    </path>
+                    <text data-target="tab3" text-anchor="middle">
+                        <textpath startoffset="50%" xlink:href="#round3">
+                            TAB 3
+                        </textpath>
+                    </text>
+                </g>
+                <g>
+                    <defs>
+                        <path d="M215,120c0,52.5-42.5,95-95,95s-95-42.5-95-95s42.5-95,95-95 S215,67.5,215,120z" fill="#FFFFFF" id="round4" stroke="#000000" stroke-miterlimit="10">
+                        </path>
+                    </defs>
+                    <path class="line" d="M23.6,189.3c7.3,10.2,16.4,19.5,27.1,27.3 S73,230.1,85,233.9" fill="none" stroke="#ff4081" stroke-miterlimit="10" stroke-width="2.5">
+                    </path>
+                    <text data-target="tab4" text-anchor="middle">
+                        <textpath startoffset="50%" xlink:href="#round4">
+                            TAB 4
+                        </textpath>
+                    </text>
+                </g>
+                <g>
+                    <defs>
+                        <path d="M215,120c0,52.5-42.5,95-95,95s-95-42.5-95-95s42.5-95,95-95 S215,67.5,215,120z" fill="#FFFFFF" id="round5" stroke="#000000" stroke-miterlimit="10">
+                        </path>
+                    </defs>
+                    <path class="line" d="M25.1,49.6C17.6,59.7,11.7,71.2,7.6,83.8 s-6,25.4-5.9,38" fill="none" stroke="#ff4081" stroke-miterlimit="10" stroke-width="2.5">
+                    </path>
+                    <text data-target="tab5" text-anchor="middle">
+                        <textpath startoffset="50%" xlink:href="#round5">
+                            TAB 5
+                        </textpath>
+                    </text>
+                </g>
+            </svg>
         </div>
     </div>
-</div>
+    <div class="section" id="slideshow">
+        <h2 class="section-title">
+            <span>
+                Slideshow
+            </span>
+        </h2>
+        <div class="content">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <h2 class="sub-title">
+                            Slide 1
+                        </h2>
+                    </div>
+                    <div class="swiper-slide">
+                        <h2 class="sub-title">
+                            Slide 2
+                        </h2>
+                    </div>
+                    <div class="swiper-slide">
+                        <h2 class="sub-title">
+                            Slide 3
+                        </h2>
+                    </div>
+                    <div class="swiper-slide">
+                        <h2 class="sub-title">
+                            Slide 4
+                        </h2>
+                    </div>
+                    <div class="swiper-slide">
+                        <h2 class="sub-title">
+                            Slide 5
+                        </h2>
+                    </div>
+                </div>
+                <div class="swiper-pagination">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="bottom">
+        <h2 class="sub-title">
+            Thanks.
+        </h2>
+    </div>
+</body>
 
-
-<div id="bottom">
-    <a href="https://github.com/kelvinh111/arc-ui" target="_blank">Github</a>
-    <h2 class="sub-title">Thanks.</h1>
-</div>
-
-
+</html>
 <button id="toggle">Ref</button>
 <div id="ref"></div>
 <div id="shadow"></div>
@@ -336,5 +551,3 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="js/app.min.js"></script>
-</body>
-</html>
