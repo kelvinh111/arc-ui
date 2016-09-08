@@ -56,14 +56,30 @@
             });
         }
 
+        var timer = null;
         function onScroll() {
             var st = $doc.scrollTop();
             _.each(sections, function (n, k) {
                 if (st >= n.top - 120 && current !== k) {
-                    if (_.has(sections, current) && typeof sections[current].leave !== "undefined") sections[current].leave();
-                    if (typeof sections[k].enter !== "undefined") sections[k].enter();
+                    if (_.has(sections, current) && typeof sections[current].leave !== "undefined") {
+                        sections[current].leave();
+                    }
+
+                    if (typeof sections[k].enter !== "undefined") {
+                        sections[k].enter();
+                    }
 
                     current = k;
+
+                    // snap
+                    clearTimeout(timer);
+                    timer = setTimeout(function () {
+                        if (st != sections[current].top + 140 && (current == "image" || current == "tabs" || current == "slideshow")) {
+                            $('html, body').animate({
+                                scrollTop: sections[current].top + 140
+                            }, 300);
+                        }
+                    }, 800);
                 }
             });
         }
