@@ -2,14 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Arc UI</title>
+    <title>Arc UI | An Experimental Web UI Kit for SmartWatch with circular screen.</title>
     <meta content="width=240, user-scalable=1" name="viewport">
     <meta content="An Experimental UI Kit for SmartWatch" name="description">
     <meta content="SmartWatch,Android Wear,Wearable,UI" name="keywords">
     <meta content="kelvinh111" name="author">
+    <meta name="theme-color" content="#ff4081">
+    <meta name="msapplication-navbutton-color" content="#ff4081">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link href="favicon.ico" rel="icon" type="image/x-icon">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css" rel="stylesheet">
+    <link href="libs/swiper.min.css" rel="stylesheet">
     <link href="css/app.css" rel="stylesheet">
 </head>
 
@@ -545,9 +549,11 @@
 </html>
 <button id="toggle">Ref</button>
 <div id="ref"></div>
-<div id="mask"></div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.15.0/lodash.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<div id="mask">
+    <img src="images/mask.svg" alt="">
+</div>
+<script src="libs/lodash.min.js"></script>
+<script src="libs/swiper.min.js"></script>
+<script src="libs/TweenMax.min.js"></script>
+<script src="libs/jquery.min.js"></script>
 <script src="js/app.js"></script>
