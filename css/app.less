@@ -82,8 +82,14 @@ body {
     z-index: 600;
     pointer-events: none;
     // opacity: .7;
-    background: url("@{img}/mask.svg") no-repeat center top;
-    background-size: cover;
+    // background: url("@{img}/mask.svg") no-repeat center top;
+    // background-size: 100%;
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+        outline: 10px solid black;
+    }
 }
 
 #top {
